@@ -13,10 +13,15 @@ import Skills from "./components/Skills"
 function App() {
   return (
     <div className=" min-h-screen py-10 px-3 sm:px-5 bg-gray-100">
+      <div className = "flex align-self: center">
+        <Card />
+        <About />
+      </div>
         <Card />
         <About />
         <Skills />
     </div>
+    
   );
 }
 
