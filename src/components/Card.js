@@ -1,7 +1,7 @@
 import React from "react";
 import { icons } from "react-icons";
 import profile from "../images/TommyLogo_BW.png"
-import {FaGithub, FaEnvelope} from "react-icons/fa"
+import {FaGithub, FaEnvelope,FaLinkedin} from "react-icons/fa"
 
 function App(){ 
 
@@ -34,6 +34,11 @@ return(
                             hover:text-white transition-colors duration-300" href="https://github.com/TruongTommy99">
                             <FaEnvelope />
                              <span class class = "sr-only">Email</span>
+                    </a>
+                    <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full 
+                            hover:text-white transition-colors duration-300" href="https://linkedin.com/in/tommy-tr">
+                            <FaLinkedin />
+                             <span class class = "sr-only">LinkedIn</span>
                     </a>
                 </div>
             

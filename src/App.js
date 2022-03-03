@@ -18,8 +18,7 @@ function App() {
         <About />
       </div>
         <Card />
-        <About />
-        <Skills />
+
     </div>
     
   );
