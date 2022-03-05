@@ -1,13 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./components/home";
 import About from "./components/About";
-import SinglePost from "./components/singlepost";
-import Post from "./components/post";
 import NavBar from "./components/navbar";
 import react from "react";
 import Card from "./components/Card";
 import Skills from "./components/Skills"
-import Project from "./components/Project/Project"
+import ShuttleTracker from "./components/Project/ShuttleTracker"
 
 
 function App() {
@@ -20,13 +17,16 @@ function App() {
       <Skills/>
 
       <div className="max-w-sm md:max-w-7xl mx-auto justify-center py-8 ">
-      <p className="text-md sm:text-5xl text-red-500 text-left font-semibold  pt-4">
+      <p className="text-md sm:text-7xl text-black text-left font-semibold  pt-4">
+            Projects I'm working on. 
+        </p>
+      <p className="text-md sm:text-5xl text-red-500 text-left font-semibold  pt-16 ">
             Shuttle Tracker
-          </p>
+        </p>
+
 
       </div>
       
-      <Project/>
     </div>
     
   );
