@@ -7,11 +7,10 @@ function App(){
 
 return(
     <div className=" w-full">
-        <div className=" flex flex-col justify-center max-w-sm mx-auto bg-white shadow-lg rounded-xl p-2 "> 
+        <div className=" flex flex-col justify-center max-w-md mx-auto bg-white shadow-lg rounded-xl p-2 "> 
             
             <div className=""> 
                 <img className=" w-32 mx-auto shadow-xl rounded-full drop-shadow-lg" src={profile} alt="profile">
-
                 </img>
             </div>
 
