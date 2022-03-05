@@ -4,7 +4,7 @@ import NavBar from "./components/navbar";
 import react from "react";
 import Card from "./components/Card";
 import Skills from "./components/Skills"
-import ShuttleTracker from "./components/Project/ShuttleTracker"
+import ShuttleTracker from "./components/ShuttleTracker"
 
 
 function App() {
@@ -23,6 +23,9 @@ function App() {
       <p className="text-md sm:text-5xl text-red-500 text-left font-semibold  pt-16 ">
             Shuttle Tracker
         </p>
+      <div className = " py-10">
+        <ShuttleTracker/>
+        </div>
 
 
       </div>

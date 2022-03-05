@@ -1,10 +1,10 @@
 import React from "react";
 import { icons } from "react-icons";
-import profile from "../images/TommyLogo_BW.png"
+import profile from "../images/TTlogo_Color.png"
 import {FaGithub, FaEnvelope,FaLinkedin} from "react-icons/fa"
 
-function App(){ 
 
+function App(){ 
 return(
     <div className=" w-full">
         <div className=" flex flex-col justify-center max-w-md mx-auto bg-white shadow-lg rounded-xl p-2 "> 
