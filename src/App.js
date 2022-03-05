@@ -18,6 +18,15 @@ function App() {
       </div>
 
       <Skills/>
+      
+      <div className="max-w-sm md:max-w-6xl mx-auto justify-center py-8 ">
+      <p className="text-md sm:text-5xl text-red-500 text-left font-semibold  pt-4">
+            Shuttle Tracker
+          </p>
+
+      </div>
+      
+        
       <Project/>
 
     </div>
