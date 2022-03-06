@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from "../images/ShuttleTrackerMap.png";
 import profile from "../images/TommyLogo_BW.png";
+import {VscChevronRight} from "react-icons/vsc"
 
 import img2 from "../images/ShuttleTrackerBusSelect.png" ;
 
@@ -27,24 +28,38 @@ return (
 
 
 
-        <div className=" col-span-1 bg-white shadow-lg rounded-xl p-2 "> 
+        <div className="relative col-span-1 bg-white shadow-lg rounded-xl p-2 "> 
+
             <p className = " text-md sm:text-xl text-red-500 text-left font-semibold  pt-3 p-3 ">
             Unique features</p>
 
             <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
                 Choose maximum boarding distance
             </p>
+
             <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
                 Announcements
             </p>
 
             <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
-                Learn more about the app.
+                Debug Mode (coming soon!)
             </p>
-            <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
-                Download the app.
-            </p>
+
+
+            <div className = " absolute bottom-12 left-3 no-underline hover:underline text-md sm:text-md text-blue-600  font-[335] pt-0.5 pl-3">
+            <a href="https://github.com/wtg/Shuttle-Tracker-SwiftUI" target="_blank" rel="noreferrer noopener">
+                    Learn more 
+                </a>
+            </div>
+
+            <div className = " absolute bottom-6 left-3 no-underline hover:underline text-md sm:text-md text-blue-600 text-left font-[335] pt-0.5 pl-3">
+                <a href="https://apps.apple.com/us/app/shuttle-tracker/id1583503452" target="_blank" rel="noreferrer noopener">
+                    Download on the Apple Store 
+                </a>
+            </div>
+
         </div>
+
 
 
     </div>
