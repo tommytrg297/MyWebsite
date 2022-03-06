@@ -1,7 +1,9 @@
 import React from "react";
 import img1 from "../images/ShuttleTrackerMap.png";
 import profile from "../images/TommyLogo_BW.png";
-import {VscChevronRight} from "react-icons/vsc"
+import {VscChevronRight} from "react-icons/vsc";
+import ST_distance from "../images/ShuttleTrackerBoardDistance.jpeg";
+import ST_announcement from "../images/ShuttleTrackerAnnouncement.jpeg";
 
 import img2 from "../images/ShuttleTrackerBusSelect.png" ;
 
@@ -37,11 +39,18 @@ return (
                 Choose maximum boarding distance
             </p>
 
-            <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
+            <div className = " flex pt-2 pb-4 rounded-xl  bg-[#f2f1f6] shadow-lg ">
+                <img src={ST_distance} className=""></img>
+                    </div>
+
+            <p className = " text-md sm:text-md text-black text-left font-semibold pt-4 pl-3 ">
                 Announcements
             </p>
+            <div className = " flex pt-2 pb-2 rounded-xl  bg-white shadow-lg ">
+                <img src={ST_announcement} className=""></img>
+                    </div>
 
-            <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
+            <p className = " text-md sm:text-md text-black text-left font-semibold pt-8 pl-3 ">
                 Debug Mode (coming soon!)
             </p>
 
