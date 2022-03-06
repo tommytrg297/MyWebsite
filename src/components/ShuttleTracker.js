@@ -34,6 +34,16 @@ return (
             <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
                 Choose maximum boarding distance
             </p>
+            <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
+                Announcements
+            </p>
+
+            <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
+                Learn more about the app.
+            </p>
+            <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
+                Download the app.
+            </p>
         </div>
 
 
