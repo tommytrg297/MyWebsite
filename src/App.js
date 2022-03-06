@@ -27,11 +27,11 @@ function App() {
         <ShuttleTracker/>
         </div>
 
-        <p className="text-md sm:text-5xl text-green-600 text-left font-semibold  pt-16 ">
+        <p className="text-md sm:text-5xl text-[#652af8] text-left font-semibold  pt-16 ">
             Personal Projects
         </p>
 
-        <p className="text-md sm:text-5xl text-blue-600 text-left font-semibold  pt-16 ">
+        <p className="text-md sm:text-5xl text-[#019cb7] text-left font-semibold  pt-16 ">
             For Developpers
         </p>
 
