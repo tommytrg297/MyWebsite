@@ -10,8 +10,9 @@ import ShuttleTracker from "./components/ShuttleTracker"
 function App() {
   return (
     <div className=" min-h-screen py-10 px-3 sm:px-5 bg-gray-100">
-      <div className = "grid place-content-center h-48 py-36">
+      <div className = "grid grid-cols-2 place-content-center h-48 py-36">
         <div><Card /></div>
+        <div> <About/></div>
       </div>
 
       <Skills/>
