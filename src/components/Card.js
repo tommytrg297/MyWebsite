@@ -29,12 +29,12 @@ return(
                              <span class class = "sr-only">Github</span>
                     </a>
 
-                    <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-green-500 rounded-full 
+                    <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-green-700 rounded-full 
                             hover:text-white transition-colors duration-300" href="https://github.com/TruongTommy99">
                             <FaEnvelope />
                              <span class class = "sr-only">Email</span>
                     </a>
-                    <a className="text-xl m-1 p-1 sm:m-2 sm:p-2  text-blue-600 hover:bg-green-500 rounded-full 
+                    <a className="text-xl m-1 p-1 sm:m-2 sm:p-2  text-blue-600 hover:bg-blue-400 rounded-full 
                             hover:text-white transition-colors duration-300" href="https://www.linkedin.com/in/tommy-tr/">
                             <FaLinkedin />
                              <span class class = "sr-only">LinkedIn</span>

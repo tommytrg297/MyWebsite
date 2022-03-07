@@ -5,7 +5,7 @@ import react from "react";
 import Card from "./components/Card";
 import Skills from "./components/Skills";
 import ShuttleTracker from "./components/ShuttleTracker";
-import personalProjects from "./components/personalProjects";
+import PersonalProjects from "./components/personalProjects";
 import ForDevs from "./components/forDevs";
 
 
@@ -34,15 +34,15 @@ function App() {
             Personal Projects
         </p>
 
-        <div className = "py-5">
-          <personalProjects/>
+        <div className = "py-10">
+          <PersonalProjects/>
         </div>
 
-        <p className="text-md sm:text-5xl text-[#019cb7] text-left font-semibold  pt-16 ">
+        <p className="text-md sm:text-5xl text-[#019cb7] text-left font-semibold  pt-8 ">
             For Developpers
         </p>
 
-        <div className = " py-10">
+        <div className = " py-5">
         <ForDevs/>
         </div>
 
