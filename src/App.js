@@ -3,8 +3,10 @@ import About from "./components/About";
 import NavBar from "./components/navbar";
 import react from "react";
 import Card from "./components/Card";
-import Skills from "./components/Skills"
-import ShuttleTracker from "./components/ShuttleTracker"
+import Skills from "./components/Skills";
+import ShuttleTracker from "./components/ShuttleTracker";
+import personalProjects from "./components/personalProjects";
+import ForDevs from "./components/forDevs";
 
 
 function App() {
@@ -32,9 +34,17 @@ function App() {
             Personal Projects
         </p>
 
+        <div className = "py-5">
+          <personalProjects/>
+        </div>
+
         <p className="text-md sm:text-5xl text-[#019cb7] text-left font-semibold  pt-16 ">
             For Developpers
         </p>
+
+        <div className = " py-10">
+        <ForDevs/>
+        </div>
 
 
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import img1 from "../images/ShuttleTrackerMap.png";
 import profile from "../images/TommyLogo_BW.png";
-import {VscChevronRight} from "react-icons/vsc";
+import {CgChevronRight} from "react-icons/cg";
 import ST_distance from "../images/ShuttleTrackerBoardDistance.jpeg";
 import ST_announcement from "../images/ShuttleTrackerAnnouncement.jpeg";
 
