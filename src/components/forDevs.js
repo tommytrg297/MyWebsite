@@ -32,9 +32,9 @@ export default function forDevs() {
                 Maps:
             </p>
             <p className= "text-base text-md md:text-xl text-left text-gray-700 leading-relaxed pl-2">
-                Set a fixed maps and use coordinates with MapKit.
+                Set a fixed map with CLCoordinates from MapKit. Request user's location and display location. 
             </p>
-            <a href="https://github.com/TruongTommy99/SwiftUI-CoreML-Example" target="_blank" rel="noreferrer noopener"
+            <a href="https://github.com/TruongTommy99/UsefulSwiftCode/tree/main/UsingMapKit/UsingMapKit" target="_blank" rel="noreferrer noopener"
             className = "py-2  text-blue-800">
                     <GoChevronRight/>
                      </a>
@@ -45,6 +45,7 @@ export default function forDevs() {
             <p className= "text-base text-md md:text-xl text-left font-bold text-gray-700 leading-relaxed ">
                 Machine Learning:
             </p>
+
             <p className= "text-base text-md md:text-xl text-left text-gray-700 leading-relaxed pl-2">
                 Parse a CSV file containing sample data and use the CoreML Kit to perform a tabular regression.
             </p>
@@ -53,9 +54,15 @@ export default function forDevs() {
                     <GoChevronRight/>
                      </a>
             </div>
-            
-
-           
+            <div className = "flex">
+            <p className= "text-base text-md md:text-xl text-left text-gray-700 leading-relaxed pl-[9.1em]">
+                Implement a MLModel into SwiftUI using CoreML.
+            </p>
+            <a href="https://github.com/TruongTommy99/SwiftUI-CoreML-Example" target="_blank" rel="noreferrer noopener"
+            className = "py-2  text-blue-800">
+                    <GoChevronRight/>
+                     </a>
+            </div>
             
 
 

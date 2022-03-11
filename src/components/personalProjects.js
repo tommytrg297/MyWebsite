@@ -46,11 +46,16 @@ return (
                      </a>
         </div>
 
-
-
+        <div className = "flex">
         <p className=" pl-5 pt-1">
-            Tetris with added colorful ASCII-art textures using the graphics packages.
-        </p>
+                Tetris with added colorful ASCII-art textures using the graphics packages.        </p>
+        <a href="https://github.com/Gerzer/Textris" target="_blank" rel="noreferrer noopener"
+            className = "py-2  text-blue-800">
+                    <GoChevronRight/>
+                     </a>
+        </div>
+    
+ 
 
 
 
@@ -62,7 +67,7 @@ return (
         <p className=" pl-5 pt-1">
             What happens when Computer Science Majors that plays chess wants to share their amazing 4 moves sequence checkmate? They use the RPIChessBot!
         </p>
-        <p className=" pl-5"> Developped using JavaScript </p>
+        <p className=" pl-5"> Developped using JavaScript. </p>
 
 
       
