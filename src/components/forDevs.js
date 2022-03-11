@@ -11,6 +11,30 @@ export default function forDevs() {
                Topics
             </p>
 
+            {/* SwiftUI Items */}
+            <div className = "flex mt-4 ">
+            <p className= "text-base text-md md:text-xl text-left font-bold text-gray-700 leading-relaxed ">
+                UI Components:
+            </p>
+
+            <p className= "text-base text-md md:text-xl text-left text-gray-700 leading-relaxed pl-2">
+                 Stepper
+            </p>
+            <a href="https://github.com/TruongTommy99/UsefulSwiftCode/blob/main/UsefulCode/UsefulCode/UI%20Components/StepperView.swift" target="_blank" rel="noreferrer noopener"
+            className = "py-2  text-blue-800">
+                    <GoChevronRight/>
+                     </a>
+            </div>
+            <div className = "flex">
+            <p className= "text-base text-md md:text-xl text-left text-gray-700 leading-relaxed pl-[8em]">
+                DatePicker and working with the Date format.
+            </p>
+            <a href="https://github.com/TruongTommy99/UsefulSwiftCode/blob/main/UsefulCode/UsefulCode/UI%20Components/DatePickerView.swift" target="_blank" rel="noreferrer noopener"
+            className = "py-2  text-blue-800">
+                    <GoChevronRight/>
+                     </a>
+            </div>
+
             {/* NOTIFICATIONS */}
             <div className = "flex mt-4 ">
             <p className= "text-base text-md md:text-xl text-left font-bold text-gray-700 leading-relaxed ">
@@ -63,6 +87,9 @@ export default function forDevs() {
                     <GoChevronRight/>
                      </a>
             </div>
+
+
+            
             
 
 
