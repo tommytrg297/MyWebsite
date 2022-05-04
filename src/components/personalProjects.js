@@ -2,7 +2,7 @@ import React from "react";
 import {FaSpotify,FaPython,FaDiscord} from "react-icons/fa";
 import img1 from "../images/python.svg.png";
 import {GoChevronRight} from "react-icons/go";
-
+import UniFriendIcon from "../images/UniFriend.png"
 
 
 
@@ -14,12 +14,12 @@ return (
 
         {/** SPOTIFY UI*/}
         <div className = "flex pl-3 pt-3">
-           <div className = " p-1  bg-black rounded-xl"><FaSpotify size={30} className = "text-green-500 "/> </div> 
+           <div className = " p-1  bg-black rounded-xl"><UniFriendIcon size={30} className = ""/> </div> 
             <p className="pl-3 pt-2.5 font-semibold text-green-500">Spotify's UI, remade!</p>
         </div>
         <div className = "flex">
         <p className=" pl-5 pt-1">
-            I recreated the iOS Spotify UI using the SwiftUI kit. 
+            I created an application that combines a music player with a timer allowing students to easily manage their studying time block.
         </p>
         <a href="https://github.com/TruongTommy99/-SpotifyUI" target="_blank" rel="noreferrer noopener"
             className = "py-2  text-blue-800">
