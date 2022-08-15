@@ -55,31 +55,6 @@ return (
                      </a>
         </div>
     
- 
-
-
-
-        {/** Discord ChessBot*/}
-        <div className = "flex pl-3 pt-3">
-           <div className = " p-1 bg-[#7289DA] rounded-xl"><FaDiscord size={30} className = " text-white"/> </div> 
-            <p className="pl-3 pt-3 font-semibold text-[#7289DA]">Discord Chess Bot</p>
-        </div>
-        <p className=" pl-5 pt-1">
-            What happens when Computer Science Majors that plays chess wants to share their amazing 4 moves sequence checkmate? They use the RPIChessBot!
-        </p>
-        <p className=" pl-5"> Developped using JavaScript. </p>
-
-
-      
-
-
-
-        
-
-
-
-
-
 
         </div>
     </div>

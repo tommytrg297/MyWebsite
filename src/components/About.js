@@ -24,35 +24,21 @@ export default function About() {
                 I enjoy creating and sharing fun and useful software. My current work include iOS applications and tons of other programs.
             </p>
 
-            <div className=" flex align-center justify-center mt-2">
+            {/* <div className=" flex align-center justify-center mt-2">
                     <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full 
                             hover:text-white transition-colors duration-300" href="https://github.com/TruongTommy99" target="_blank">
                             <FaGithub />
                              <span class  = "sr-only">Github</span>
                     </a>
-                    { /** 
-                    <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-green-700 rounded-full 
-                            hover:text-white transition-colors duration-300" href="https://github.com/TruongTommy99">
-                            <FaEnvelope />
-                             <span class class = "sr-only">Email</span>
-                    </a>
-                    */ }
+
                     <a className="text-xl m-1 p-1 sm:m-2 sm:p-2  text-blue-600 hover:bg-blue-400 rounded-full 
                             hover:text-white transition-colors duration-300" href="https://www.linkedin.com/in/tommy-tr/ " target="_blank">
                             <FaLinkedin />
                              <span class = "sr-only">LinkedIn</span>
                     </a>
-                </div>
+                </div> */}
 
             </div>
-                
-        
-
-
-            
-
-
-
         </div>
     </div>
 

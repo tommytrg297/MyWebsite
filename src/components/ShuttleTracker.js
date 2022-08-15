@@ -1,16 +1,18 @@
 import React from "react";
-import img1 from "../images/ShuttleTrackerMap.png";
 import profile from "../images/TommyLogo_BW.png";
 import {CgChevronRight} from "react-icons/cg";
 import {AiOutlinePlusCircle} from "react-icons/ai"
 import ST_distance from "../images/ShuttleTrackerBoardDistance.jpeg";
 import ST_announcement from "../images/ShuttleTrackerAnnouncement.jpeg";
 
-import img2 from "../images/ShuttleTrackerBusSelect.png" ;
+import STBusSelection from "../images/ShuttleTrackerBusSelection.png";
+import STMainScreen from "../images/ShuttleTrackerMainScreen.png";
+import STMilestones from "../images/ShuttleTrackerMilestones.png";
+
+
+
 
 function Project() {
-
-
 
 return (
     <div className="grid grid-cols-3 gap-7" > 
@@ -26,8 +28,8 @@ return (
         </p>
 
         <div className = "flex pt-8 pb-6">
-       <img src={img1} className=" object-scale-down h-[32rem] w-2/5"></img>
-       <img src={img2} className=" object-scale-down h-[32rem] w-3/5"></img>
+       <img src={STMainScreen} className=" object-scale-down h-[32rem] w-2/5 "></img>
+       <img src={STBusSelection} className=" object-scale-down h-[32rem] w-3/5 "></img>
          </div>
         </div>
 
@@ -36,6 +38,14 @@ return (
             Unique features</p>
 
             <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
+                Community milestones. See how many students contribute to the application!
+            </p>
+
+            <div className = " flex pt-2 pb-4 rounded-xl  object-scale-down h-[32rem] px-16">
+                <img src={STMilestones} className=""></img>
+                    </div>
+
+            {/* <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
                 Choose maximum boarding distance
             </p>
 
@@ -52,7 +62,7 @@ return (
 
             <p className = " text-md sm:text-md text-black text-left font-semibold pt-8 pl-3 ">
                 Debug Mode (coming soon!)
-            </p>
+            </p> */}
 
             <div className = " absolute bottom-12 left-3 no-underline hover:underline text-md sm:text-md text-blue-600  font-[335] pt-0.5 pl-3">
             <a href="https://github.com/wtg/Shuttle-Tracker-SwiftUI" target="_blank" rel="noreferrer noopener">

@@ -56,12 +56,7 @@ return (
                 <p className="mt-6 text-xl sm:text-2xl font-semibold text-center">React</p>
             </div>
 
-           
-
-
-
-
-
+        
         </div>
     </div>
 )

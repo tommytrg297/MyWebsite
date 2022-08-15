@@ -42,12 +42,7 @@ return(
                     </a>
                 </div>
             
-
             </div>
-       
-
-       
-
         </div>
          
     </div>
