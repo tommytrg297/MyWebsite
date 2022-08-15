@@ -4,8 +4,8 @@ import Map from "../images/MapRoutes.png"
 
 import RCOS from "../images/RCOS.png"
 import RPIChess from "../images/RPIChessClub.png"
-import {FaArrowRight} from "react-icons/fa"
-import {FaGithub, FaEnvelope,FaLinkedin, FaEnvelopeOpen} from "react-icons/fa"
+import {FaArrowRight, FaPlus} from "react-icons/fa"
+import {FaGithub, FaEnvelope,FaLinkedin, FaEnvelopeOpen,FaPlusCircle} from "react-icons/fa"
 
 import SwiftUI from "../images/ProgrammingIcons/SwiftUI.png"
 import Swift from "../images/ProgrammingIcons/Swift.png"
@@ -17,74 +17,97 @@ import PackageManager from "../images/ProgrammingIcons/SwiftPackageManager.png"
 import Firebase from "../images/ProgrammingIcons/Firebase.png"
 import Devices from "../images/ComputerPhone.png"
 
-
-
-
-
-
 export default function AboutMe() {
+const [openTab, setOpenTab] = React.useState(1);
+
 const programmingIcon = "w-20 bg-transparent drop-shadow-lg";
+const blueTitleFont1 = "text-md sm:text-xl text-left text-blue-600 font-semibold  pt-3 p-3"
+const whiteTitleFont1 = "text-md sm:text-xl text-left text-white font-semibold  pt-3 p-3"
+
 
 return (
     <div className="grid grid-cols-3 gap-7" > 
 
         <div className="col-span-1 bg-white shadow-lg rounded-xl "> 
 
-        <p className = " text-md sm:text-xl text-blue-400 text-left font-semibold  pt-3 p-3 ">
+        <p className = " text-md sm:text-xl text-blue-400 text-left font-semibold pt-5 p-3">
             From Saigon to New York through Paris</p>
-
-        <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3 ">
+        <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3">
         After my first year of engineering school in Paris, I moved to the US and am currently attending RPI.
         </p>
-
         <img className = " w-auto bg-transparent" src={Map} alt="profile" ></img>
-
-
         </div>
 
-        <div className="relative col-span-1 bg-white shadow-lg rounded-xl p-2 "> 
-            <p className = " text-md sm:text-xl text-blue-600 text-left font-semibold  pt-3 p-3 ">
-            Technologies I use</p>
 
-            <p className = " text-md sm:text-2xl  text-black text-left font-semibold pt-0.5 pl-3 ">
-                SwiftUI and UIKit to build applications on Xcode.
-            </p>
-
-            <div className="flex space-x-3 justify-center py-4">
-
-            <img className = " w-24 bg-transparent drop-shadow-lg" src={SwiftUI} alt="profile" ></img>
-            <img className = " w-24 bg-transparent drop-shadow-lg" src={Swift} alt="profile" ></img>
-            <img className = " w-24 bg-transparent drop-shadow-lg" src={Xcode} alt="profile" ></img>
-
-
+        <div className= {(openTab === 1 ? "bg-white relative col-span-1 shadow-lg rounded-xl p-2" : 
+                                          "bg-blue-500 relative col-span-1 shadow-lg rounded-xl p-2")  }>  
+            <div className="flex space-x-28 ">
+                <p className = { (openTab === 1 ? blueTitleFont1: 
+                                                  "text-md sm:text-xl text-left text-blue-500 font-semibold  pt-3 p-3" )}>
+                Technologies I use
+                </p>
+                <a className = 
+                    { (openTab === 1 ? "text-3xl m-1 p-1 sm:m-0.5 sm:p-2 text-blue-500 rounded-none " :
+                                       "text-3xl m-1 p-1 sm:m-0.5 sm:p-2 text-white rounded-none" )} 
+                    onClick={e => {
+                        e.preventDefault();
+                        if (openTab == 2) { 
+                            setOpenTab(1);
+                        }
+                        if (openTab == 1) { 
+                            setOpenTab(2);
+                        }
+                    }}
+                    data-toggle="tab"
+                    href="#link2"
+                    role="tablist"
+                    >
+                    <div className= {(openTab == 1 ? "" : "rotate-45 " )}>
+                        <FaPlusCircle/>
+                    </div>
+                </a>
+            </div>
+            <div className={openTab === 1 ? "block" : "hidden"} id="link1">
+                    <p className = " text-md sm:text-2xl  text-black text-left font-semibold pt-0.5 pl-3 "
+                                    id = "link1">
+                        SwiftUI and UIKit to build applications on Xcode.
+                    </p>
+                    <div className="flex space-x-3 justify-center py-4">
+                    <img className = " w-24 bg-transparent drop-shadow-lg" src={SwiftUI} alt="profile" ></img>
+                    <img className = " w-24 bg-transparent drop-shadow-lg" src={Swift} alt="profile" ></img>
+                    <img className = " w-24 bg-transparent drop-shadow-lg" src={Xcode} alt="profile" ></img>
+                    </div>
+                    <p className = " text-md sm:text-2xl text-black text-left font-semibold pl-3 ">
+                    Frameworks include AVFoundations, MapKit, CoreML and multiple 3rd party libraries.
+                    </p>
             </div>
 
-            <p className = " text-md sm:text-2xl text-black text-left font-semibold pl-3 ">
-                Frameworks include AVFoundations, MapKit, CoreML and multiple 3rd party libraries.
-            </p>
-
-            {/* <div className="flex space-x-5 justify-center py-8">
-            <img className = {programmingIcon} src={AVFoundations} alt="profile" ></img>
-            <img className = {programmingIcon} src={MapKit} alt="profile" ></img>
-            <img className = {programmingIcon} src={CoreML} alt="profile" ></img>
-            </div> */}
-
-            {/* <p className = " text-md sm:text-2xl text-black text-left font-semibold pt-0.5 pl-3 ">
-                Firebase with REST API.
-            </p>
-
-            <div className="flex space-x-3 justify-center py-4">
-            <img className = {programmingIcon} src={Devices} alt="profile" ></img>
-            <p className= " text-5xl text-blue-900 py-4">  <strong> <FaArrowRight/> </strong>   </p>
-            <div className=" py-2">
-                <p className="font-semibold pt-0.5 pl-3"> GET </p>
-                <p className="font-semibold pt-0.5 pl-3"> POST </p>
+            <div className={openTab === 2 ? "block" : "hidden" } id="link2">
+                    <p className = " text-md sm:text-2xl text-white justify-center font-semibold pt-2 pl-3 "
+                                    id = "link1">
+                    I worked with Firebase as a backend tool to store and retrieve data through REST APIs such as GET or POST requests.
+                    </p>
+                    <p className = " text-md sm:text-2xl text-white text-left font-semibold pl-3 pt-3 ">
+                    I haved also used Python for my schoolwork and made this website with React.js and TailwindCSS.
+                    </p>
             </div>
-            <p className= " text-5xl text-orange-400 py-4">  <strong> <FaArrowRight/> </strong>   </p>
-            <img className = {programmingIcon} src={Firebase} alt="profile" ></img>
-            </div> */}
             
-        </div>
+        </div>  
+          
+        
+
+
+
+        {/* <div className={openTab === 2 ? "block" : "hidden"} id="link1">
+                <p className = " text-md sm:text-2xl  text-black text-left font-semibold pt-0.5 pl-3 "
+                                id = "link1">
+                    I have experienced in using Firebase as a back-end service, making POST and GET request in order to receive and transmit data.
+                </p>
+
+                <p className = " text-md sm:text-2xl text-black text-left font-semibold pl-3 ">
+                I also have used Python for schoolwork, and have experience in Web Development with React.js and TailwindCSS.
+                 </p>
+            </div> */}
 
 
         <div className="relative col-span-1 bg-white shadow-lg rounded-xl p-2 "> 
@@ -137,7 +160,7 @@ return (
             </div>
         </div>
 
-    </div>
+        </div>
 )
 }
 
