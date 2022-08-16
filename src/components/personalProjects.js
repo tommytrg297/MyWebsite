@@ -19,7 +19,7 @@ return (
         </div>
         <div className = "flex">
         <p className=" pl-5 pt-1">
-            I created an application that combines a music player with a timer allowing students to easily manage their studying studying block.
+            I created an application that combines a music player with a timer allowing students to easily manage their studying block.
         </p>
         <a href="https://github.com/TruongTommy99/-SpotifyUI" target="_blank" rel="noreferrer noopener"
             className = "py-2  text-blue-800">
