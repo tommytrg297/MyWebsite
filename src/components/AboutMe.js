@@ -27,9 +27,7 @@ const whiteTitleFont1 = "text-md sm:text-xl text-left text-white font-semibold  
 
 return (
     <div className="grid grid-cols-3 gap-7" > 
-
         <div className="col-span-1 bg-white shadow-lg rounded-xl "> 
-
         <p className = " text-md sm:text-xl text-blue-400 text-left font-semibold pt-5 p-3">
             From Saigon to New York through Paris</p>
         <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3">
@@ -37,7 +35,6 @@ return (
         </p>
         <img className = " w-auto bg-transparent" src={Map} alt="profile" ></img>
         </div>
-
 
         <div className= {(openTab === 1 ? "bg-white relative col-span-1 shadow-lg rounded-xl p-2" : 
                                           "bg-blue-500 relative col-span-1 shadow-lg rounded-xl p-2")  }>  
@@ -95,9 +92,6 @@ return (
         </div>  
           
         
-
-
-
         {/* <div className={openTab === 2 ? "block" : "hidden"} id="link1">
                 <p className = " text-md sm:text-2xl  text-black text-left font-semibold pt-0.5 pl-3 "
                                 id = "link1">
