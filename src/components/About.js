@@ -2,7 +2,7 @@ import React from "react"
 
 import profile from "../images/TTlogo_Color.png"
 import {FaGithub, FaEnvelope,FaLinkedin, FaRegFilePdf, FaFilePdf} from "react-icons/fa"
-import MyResume from '/Users/tommy/Desktop/Tommy/MyWebsite/src/TRUONG_Resume.pdf';
+import MyResume from '../TRUONG_Resume.pdf';
 
 export default function About() {
     return (
