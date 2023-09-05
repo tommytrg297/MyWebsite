@@ -2,6 +2,8 @@ import React from "react";
 import {FaSpotify,FaPython,FaDiscord} from "react-icons/fa";
 import img1 from "../images/python.svg.png";
 import {GoChevronRight} from "react-icons/go";
+import { SiShazam } from "react-icons/si";
+import {FaPaperPlane} from "react-icons/fa";
 import UniFriendIcon from "../images/UniFriend.png"
 
 
@@ -27,7 +29,7 @@ return (
         {/** Explorer*/}
         <div className="col-span-1 bg-white shadow-lg rounded-xl p-2">  
             <div className="px-4 py-2 flex ">
-                <img src={UniFriendIcon} className=" object-scale-down h-[2.5rem] "></img> {/* Icon */}
+                <FaPaperPlane className="mt-1 text-blue-500 text-md sm:text-3xl"></FaPaperPlane> 
                 <a href="https://github.com/TruongTommy99/Explorer/tree/main/Explorer" target="_blank" rel="noreferrer noopener" className = "pt-2 px-4  font-semibold text-blue-500">  
                             Explorer
                 </a>   {/* Title */}
@@ -40,7 +42,7 @@ return (
         {/** Shazam*/}
         <div className="col-span-1 bg-white shadow-lg rounded-xl p-2">  
             <div className="px-4 py-2 flex ">
-                <img src={UniFriendIcon} className=" object-scale-down h-[2.5rem] "></img> {/* Icon */}
+                <SiShazam className="mt-1 text-blue-500 text-md sm:text-3xl"></SiShazam> 
                 <a href="https://github.com/TruongTommy99/Shazam-Assignment/tree/main/ShazamAssignment/ShazamAssignment" target="_blank" rel="noreferrer noopener" className = "pt-2 px-4  font-semibold text-blue-500">  
                             ShazamKit
                 </a>   {/* Title */}
