@@ -28,7 +28,7 @@ const whiteTitleFont1 = "text-md sm:text-xl text-left text-white font-semibold  
 return (
     <div className="grid grid-cols-3 gap-7" > 
         <div className="col-span-1 bg-white shadow-lg rounded-xl "> 
-        <p className = " text-md sm:text-xl text-blue-400 text-left font-semibold pt-5 p-3">
+        <p className = " text-md sm:text-xl text-blue-600 text-left font-semibold pt-5 p-3">
             From Saigon to New York through Paris</p>
         <p className = " text-md sm:text-md text-black text-left font-semibold pt-0.5 pl-3">
         After my first year of engineering school in Paris, I moved to the US and am currently attending RPI.
@@ -40,7 +40,7 @@ return (
                                           "bg-blue-500 relative col-span-1 shadow-lg rounded-xl p-2")  }>  
             <div className="flex space-x-28 ">
                 <p className = { (openTab === 1 ? blueTitleFont1: 
-                                                  "text-md sm:text-xl text-left text-blue-500 font-semibold  pt-3 p-3" )}>
+                                                  "text-md sm:text-xl text-left text-blue-600 font-semibold  pt-3 p-3" )}>
                 Technologies I use
                 </p>
                 <a className = 
@@ -105,7 +105,7 @@ return (
 
 
         <div className="relative col-span-1 bg-white shadow-lg rounded-xl p-2 "> 
-            <p className = " text-md sm:text-xl text-blue-800 text-left font-semibold  pt-3 p-3 ">
+            <p className = " text-md sm:text-xl text-blue-600 text-left font-semibold  pt-3 p-3 ">
             What I'm up to</p>
 
             <div className=" flex text-left py-5 ">
