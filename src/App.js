@@ -44,7 +44,7 @@ function App() {
 
 
 
-        <p className="text-md sm:text-5xl text-[#019cb7] text-left font-semibold  pt-8 ">
+        <p className="text-md sm:text-5xl text-orange-600 text-left font-semibold  pt-8 ">
             For Developpers
         </p>
 

@@ -13,29 +13,41 @@ return (
 
         {/** Uni Friends*/}
         <div className="col-span-1 bg-white shadow-lg rounded-xl p-2">  
-            <img src={UniFriendIcon} className=" object-scale-down h-[2.5rem] "></img>
-            <p className="pl-3 pt-2.5 font-semibold text-blue-500">Uni Friend</p>
-            <p className=" pl-5 pt-1">
-                An application that combines a music player with a timer allowing students to easily manage their studying block.
-            </p>
-            <a href="https://github.com/TruongTommy99/-SpotifyUI" target="_blank" rel="noreferrer noopener"
-                className = "py-2  text-blue-800">
-                        <GoChevronRight/>
-            </a>
+            <div className="px-4 py-2 flex ">
+                <img src={UniFriendIcon} className=" object-scale-down h-[2.5rem] "></img> {/* Icon */}
+                <a href="https://apps.apple.com/lt/app/uni-friends/id1622401835" target="_blank" rel="noreferrer noopener" className = "pt-2 px-4  font-semibold text-blue-500">  
+                            Uni Friends
+                </a>   {/* Title */}
+            </div>
+            <div className=" pl-5 pt-1 font-semibold">
+                <p className=""> An application that combines a music player with a timer allowing students to easily manage their studying block. </p>                     
+            </div>
         </div>
 
-        {/** Uni Friends*/}
-        <div className=" col-span-1 bg-white shadow-lg rounded-xl p-2"> 
-            <p>
-                Explorer
-            </p>
+        {/** Explorer*/}
+        <div className="col-span-1 bg-white shadow-lg rounded-xl p-2">  
+            <div className="px-4 py-2 flex ">
+                <img src={UniFriendIcon} className=" object-scale-down h-[2.5rem] "></img> {/* Icon */}
+                <a href="https://github.com/TruongTommy99/Explorer/tree/main/Explorer" target="_blank" rel="noreferrer noopener" className = "pt-2 px-4  font-semibold text-blue-500">  
+                            Explorer
+                </a>   {/* Title */}
+            </div>
+            <div className=" pl-5 pt-1 font-semibold">
+                <p className=""> Find your next vacation spot and learn more about it.</p>                     
+            </div>
         </div>
 
         {/** Shazam*/}
-        <div className=" col-span-1 bg-white shadow-lg rounded-xl p-2"> 
-            <p>
-                Shazam
-            </p>
+        <div className="col-span-1 bg-white shadow-lg rounded-xl p-2">  
+            <div className="px-4 py-2 flex ">
+                <img src={UniFriendIcon} className=" object-scale-down h-[2.5rem] "></img> {/* Icon */}
+                <a href="https://github.com/TruongTommy99/Shazam-Assignment/tree/main/ShazamAssignment/ShazamAssignment" target="_blank" rel="noreferrer noopener" className = "pt-2 px-4  font-semibold text-blue-500">  
+                            ShazamKit
+                </a>   {/* Title */}
+            </div>
+            <div className=" pl-5 pt-1 font-semibold">
+                <p className=""> Start Shazaming with only a few lines of code. </p>                     
+            </div>
         </div>
 
     </div>
