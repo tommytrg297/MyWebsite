@@ -5,7 +5,8 @@ import Map from "../images/MapRoutes.png"
 import RCOS from "../images/RCOS.png"
 import RPIChess from "../images/RPIChessClub.png"
 import {FaArrowRight, FaPlus} from "react-icons/fa"
-import {FaGithub, FaEnvelope,FaLinkedin, FaEnvelopeOpen,FaPlusCircle} from "react-icons/fa"
+import {FaGithub, FaEnvelope,FaLinkedin, FaEnvelopeOpen,FaPlusCircle, FaTableTennis} from "react-icons/fa"
+import AWS from "../images/AWS.png"
 
 import SwiftUI from "../images/ProgrammingIcons/SwiftUI.png"
 import Swift from "../images/ProgrammingIcons/Swift.png"
@@ -40,7 +41,7 @@ return (
                                           "bg-blue-500 relative col-span-1 shadow-lg rounded-xl p-2")  }>  
             <div className="flex space-x-28 ">
                 <p className = { (openTab === 1 ? blueTitleFont1: 
-                                                  "text-md sm:text-xl text-left text-blue-600 font-semibold  pt-3 p-3" )}>
+                                                  "text-md sm:text-xl text-left text-blue-500 font-semibold  pt-3 p-3" )}>
                 Technologies I use
                 </p>
                 <a className = 
@@ -108,14 +109,19 @@ return (
             <p className = " text-md sm:text-xl text-blue-600 text-left font-semibold  pt-3 p-3 ">
             What I'm up to</p>
 
-            <div className=" flex text-left py-5 ">
-            <img className=" w-16 shadow-xl bg-white rounded-full drop-shadow-lg" src={RCOS}></img>
-            <div> 
-                <p className = "text-md sm:text-md text-black  font-semibold pl-3 ">RCOS </p>
-                <p className = "text-md sm:text-md text-black font-semibold pl-3 "> Rensselaer Center for Open Source </p>
+            <div className="flex justify-start py-5 ">
+            <img className=" w-16" src={AWS}></img>
+            <div className=""> 
+                <p className = "text-md sm:text-md text-black font-semibold pl-3 "></p>
+                <div className="flex">
+                <p className = "text-md sm:text-md text-black font-semibold pl-3 ">Here's my team (I'm on the far left!), playing 
+                <a className = "text-md sm:text-md text-[#5865F2] font-semibold pl-1 " href = "https://www.instagram.com/p/CvxMH9YMOgb/?hl=en">Pickeball <FaTableTennis class='inline'/> </a> 
+                during my summer internship!
+                </p>
             </div>
             </div>
-
+            </div>
+            
             <div className="flex justify-start py-5 ">
             <img className=" w-16 shadow-xl bg-white rounded-full drop-shadow-lg" src={RPIChess}></img>
             <div> 
