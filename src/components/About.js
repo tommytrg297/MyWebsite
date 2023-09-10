@@ -29,7 +29,7 @@ export default function About() {
                 <a href = {MyResume} target = "_blank" className= "flex align-center justify-center mt-2 py-4 px- hover:underline ">
                     <FaFilePdf className="text-red-800 mt-1 m-1.5" />   
                     <p className= "text-4xl md:text-xl text-center text-gray-700 leading-relaxed  ">
-                        Latest Resume: August 2023
+                        Latest Resume: September 2023
                     </p>
                 </a>
             </div>
