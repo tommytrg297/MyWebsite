@@ -11,59 +11,86 @@ import ExplorerScreenshot from "../images/ExplorerScreenshot.png"
 import ExplorerScreenInformationView from "../images/ExplorerScreenshotInformationView.png"
 import ShazamScreenshot from "../images/ShazamScreenshot.png"
 
-
-
-
 function personalProjects() {
+    return (
+        // Changed to single column on mobile, 2 on tablet, 3 on desktop
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7"> 
 
-return (
-    <div className="grid grid-cols-3 gap-7 auto-cols-max " > 
+            {/* Uni Friends */}
+            <div className="col-span-1 bg-white shadow-lg rounded-xl p-4">  
+                <div className="flex items-center gap-3 pb-3">
+                    <img src={UniFriendIcon} 
+                         className="w-10 h-10 object-contain flex-shrink-0" 
+                         alt="Uni Friends Icon" />
+                    <a href="https://apps.apple.com/lt/app/uni-friends/id1622401835" 
+                       target="_blank" 
+                       rel="noreferrer noopener" 
+                       className="font-semibold text-blue-500 hover:underline text-base sm:text-lg">  
+                        Uni Friends
+                    </a>
+                </div>
+                <div className="pb-4">
+                    <p className="text-sm sm:text-base font-semibold">
+                        Time your studying block with a relaxing music player.
+                    </p>                     
+                </div>
+                <div className="flex justify-center">
+                    <img src={UniFriendsScreenshot} 
+                         className="w-full max-w-[200px] h-auto object-contain" 
+                         alt="Uni Friends Screenshot" />
+                </div>
+            </div>
 
-        {/** Uni Friends*/}
-        <div className="col-span-1 bg-white shadow-lg rounded-xl p-2">  
-            <div className="px-4 py-2 flex ">
-                <img src={UniFriendIcon} className=" object-scale-down h-[2.5rem] "></img> {/* Icon */}
-                <a href="https://apps.apple.com/lt/app/uni-friends/id1622401835" target="_blank" rel="noreferrer noopener" className = "pt-2 px-4  font-semibold text-blue-500">  
-                            Uni Friends
-                </a>   {/* Title */}
+            {/* Explorer */}
+            <div className="col-span-1 bg-white shadow-lg rounded-xl p-4">  
+                <div className="flex items-center gap-3 pb-3">
+                    <FaPaperPlane className="text-blue-500 text-2xl sm:text-3xl flex-shrink-0" />
+                    <a href="https://github.com/TruongTommy99/Explorer/tree/main/Explorer" 
+                       target="_blank" 
+                       rel="noreferrer noopener" 
+                       className="font-semibold text-blue-500 hover:underline text-base sm:text-lg">  
+                        Explorer
+                    </a>
+                </div>
+                <div className="pb-4">
+                    <p className="text-sm sm:text-base font-semibold">
+                        Find your next vacation spot and learn more about it.
+                    </p>                     
+                </div>
+                <div className="flex flex-col gap-4 items-center">
+                    <img src={ExplorerScreenshot} 
+                         className="w-full max-w-[200px] h-auto object-contain transition-transform duration-500 hover:scale-110 cursor-pointer" 
+                         alt="Explorer Screenshot" />
+                    <img src={ExplorerScreenInformationView} 
+                         className="w-full max-w-[200px] h-auto object-contain transition-transform duration-500 hover:scale-110 cursor-pointer" 
+                         alt="Explorer Information View" />
+                </div>
             </div>
-            <div className=" pl-5 pt-1 font-semibold">
-                <p className=""> Time your studying block with a relaxing music player.</p>                     
+
+            {/* Shazam */}
+            <div className="col-span-1 bg-white shadow-lg rounded-xl p-4">  
+                <div className="flex items-center gap-3 pb-3">
+                    <SiShazam className="text-blue-500 text-2xl sm:text-3xl flex-shrink-0" />
+                    <a href="https://github.com/TruongTommy99/Shazam-Assignment/tree/main/ShazamAssignment/ShazamAssignment" 
+                       target="_blank" 
+                       rel="noreferrer noopener" 
+                       className="font-semibold text-blue-500 hover:underline text-base sm:text-lg">  
+                        ShazamKit
+                    </a>
+                </div>
+                <div className="pb-4">
+                    <p className="text-sm sm:text-base font-semibold">
+                        Start Shazaming with only a few lines of code.
+                    </p>                     
+                </div>
+                <div className="flex justify-center">
+                    <img src={ShazamScreenshot} 
+                         className="w-full max-w-[200px] h-auto object-contain" 
+                         alt="Shazam Screenshot" />
+                </div>
             </div>
-            <img src={UniFriendsScreenshot} className=" flex pb-4 rounded-xl  object-scale-down h-[32rem] px-16"></img>
         </div>
-
-        {/** Explorer*/}
-        <div className="col-span-1 bg-white shadow-lg rounded-xl p-2">  
-            <div className="px-4 py-2 flex ">
-                <FaPaperPlane className="mt-1 text-blue-500 text-md sm:text-3xl"></FaPaperPlane> 
-                <a href="https://github.com/TruongTommy99/Explorer/tree/main/Explorer" target="_blank" rel="noreferrer noopener" className = "pt-2 px-4  font-semibold text-blue-500">  
-                            Explorer
-                </a>   {/* Title */}
-            </div>
-            <div className=" pl-5 pt-1 font-semibold">
-                <p className=""> Find your next vacation spot and learn more about it.</p>                     
-            </div>
-            <img src={ExplorerScreenshot} className="flex pb-4 rounded-xl object-scale-down h-[16rem] px-12 hover:scale-[3.5] transition duration-500 cursor-pointer"></img>
-            <img src={ExplorerScreenInformationView} className="flex pb-4 rounded-xl object-scale-down h-[16rem] px-12 hover:scale-[3.5] transition duration-500 cursor-pointer"></img>
-        </div>
-
-        {/** Shazam*/}
-        <div className="col-span-1 bg-white shadow-lg rounded-xl p-2">  
-            <div className="px-4 py-2 flex ">
-                <SiShazam className="mt-1 text-blue-500 text-md sm:text-3xl"></SiShazam> 
-                <a href="https://github.com/TruongTommy99/Shazam-Assignment/tree/main/ShazamAssignment/ShazamAssignment" target="_blank" rel="noreferrer noopener" className = "pt-2 px-4  font-semibold text-blue-500">  
-                            ShazamKit
-                </a>   {/* Title */}
-            </div>
-            <div className=" pl-5 pt-1 font-semibold">
-                <p className=""> Start Shazaming with only a few lines of code. </p>                     
-            </div>
-            <img src={ShazamScreenshot} className=" flex pb-4 rounded-xl  object-scale-down h-[32rem] px-16"></img>
-        </div>
-
-    </div>
-)
+    )
 }
 
 export default personalProjects;
